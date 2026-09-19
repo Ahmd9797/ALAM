@@ -1,0 +1,19 @@
+android {
+    namespace "com.fawry.alam"
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "com.fawry.alam"
+        minSdk 21
+        targetSdk 34
+        versionCode 1
+        versionName "1.0.0"
+        multiDexEnabled true
+    }
+
+    buildTypes {
+        release {
+            signingConfig signingConfigs.debug
+        }
+    }
+}
